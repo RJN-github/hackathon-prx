@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import { Student, AttendanceRecord, Session } from "../types";
 
 // Initialize the client strictly as per guidelines
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY });
 
 export const getAttendanceInsights = async (
     students: Student[],
